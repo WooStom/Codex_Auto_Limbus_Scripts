@@ -1,0 +1,180 @@
+[2026-02-21 11:18:38] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 11:18:38] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "stable_frames": 3, "window_title": "LimbusCompany"}
+[2026-02-21 11:19:27] 手动停止状态机
+[2026-02-21 11:19:27] 状态机已结束
+[2026-02-21 11:19:40] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 11:19:40] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "stable_frames": 3, "window_title": "LimbusCompany"}
+[2026-02-21 11:19:43] 状态切换：UNKNOWN -> LOGIN | {"from_state": "UNKNOWN", "to_state": "LOGIN", "score": 0.8923, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 11:21:30] 手动停止状态机
+[2026-02-21 11:21:30] 状态机已结束
+[2026-02-21 11:23:41] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 11:23:41] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:23:54] 状态切换：UNKNOWN -> LOGIN | {"from_state": "UNKNOWN", "to_state": "LOGIN", "score": 0.8923, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 11:24:04] 检测到游戏已关闭，SPLASH/LOGIN 状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:24:04] 状态机已结束
+[2026-02-21 11:24:07] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 11:24:07] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:24:10] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.8583, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 11:24:16] 状态切换：SPLASH -> LOGIN | {"from_state": "SPLASH", "to_state": "LOGIN", "score": 0.8971, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 11:26:27] 检测到游戏已关闭，SPLASH/LOGIN 状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:26:27] 状态机已结束
+[2026-02-21 11:30:47] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 11:30:47] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:31:01] 状态切换：UNKNOWN -> LOGIN | {"from_state": "UNKNOWN", "to_state": "LOGIN", "score": 0.8877, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 11:31:05] 检测到游戏已关闭，SPLASH/LOGIN 状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:31:05] 状态机已结束
+[2026-02-21 11:31:28] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 11:31:28] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:31:30] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.8596, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 11:31:37] 状态切换：SPLASH -> LOGIN | {"from_state": "SPLASH", "to_state": "LOGIN", "score": 0.8119, "anchor": "LOGIN_800_600_2.png"}
+[2026-02-21 11:31:40] 检测到游戏已关闭，SPLASH/LOGIN 状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:31:40] 状态机已结束
+[2026-02-21 11:33:42] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 11:33:42] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:33:46] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.8583, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 11:33:53] 状态切换：SPLASH -> LOGIN | {"from_state": "SPLASH", "to_state": "LOGIN", "score": 0.8972, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 11:34:03] 检测到游戏已关闭，SPLASH/LOGIN 状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:34:03] 状态机已结束
+[2026-02-21 11:34:23] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 11:34:23] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:34:25] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.8583, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 11:34:31] 状态切换：SPLASH -> LOGIN | {"from_state": "SPLASH", "to_state": "LOGIN", "score": 0.8971, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 11:35:00] 检测到游戏已关闭，SPLASH/LOGIN 状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:35:00] 状态机已结束
+[2026-02-21 11:35:20] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 11:35:20] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:35:33] 手动停止状态机
+[2026-02-21 11:35:33] 状态机已结束
+[2026-02-21 11:35:35] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 11:35:35] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:35:38] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.862, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 11:35:46] 状态切换：SPLASH -> LOGIN | {"from_state": "SPLASH", "to_state": "LOGIN", "score": 0.8939, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 11:35:55] 检测到游戏已关闭，SPLASH/LOGIN 状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 11:35:55] 状态机已结束
+[2026-02-21 12:10:24] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 12:10:24] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 12:10:43] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 12:10:43] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 12:10:48] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.862, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 12:10:54] 状态切换：SPLASH -> LOGIN | {"from_state": "SPLASH", "to_state": "LOGIN", "score": 0.8972, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 12:11:08] 检测到游戏已关闭，SPLASH/LOGIN 状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 12:11:08] 状态机已结束
+[2026-02-21 12:12:08] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 12:12:08] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 12:12:13] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.8611, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 12:12:19] 状态切换：SPLASH -> LOGIN | {"from_state": "SPLASH", "to_state": "LOGIN", "score": 0.8973, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 12:12:53] 检测到游戏已关闭，SPLASH/LOGIN 状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 12:12:54] 状态机已结束
+[2026-02-21 12:29:56] 锚点加载完成 | {"count": 5, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 12:29:56] 状态机启动：SPLASH/LOGIN | {"threshold": 0.8, "login_priority_margin": 0.03, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 12:30:02] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.8583, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 12:30:08] 状态切换：SPLASH -> LOGIN | {"from_state": "SPLASH", "to_state": "LOGIN", "score": 0.8972, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 12:30:20] 检测到游戏已关闭，SPLASH/LOGIN 状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 12:30:20] 状态机已结束
+[2026-02-21 12:42:05] 锚点加载完成 | {"count": 6, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 12:42:05] 状态机启动：SPLASH/LOGIN/CONNECTING | {"threshold": 0.8, "login_priority_margin": 0.03, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 12:42:10] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.8611, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 12:42:16] 状态切换：SPLASH -> LOGIN | {"from_state": "SPLASH", "to_state": "LOGIN", "score": 0.8971, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 12:42:19] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.8261, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 12:42:24] 状态切换：CONNECTING -> LOGIN | {"from_state": "CONNECTING", "to_state": "LOGIN", "score": 0.8969, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 12:42:25] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.8309, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 12:43:20] 检测到游戏已关闭，状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 12:43:20] 状态机已结束
+[2026-02-21 12:56:09] 锚点加载完成 | {"count": 7, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 12:56:09] 状态机启动：SPLASH/LOGIN/CONNECTING/LOBBY | {"threshold": 0.8, "login_priority_margin": 0.03, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 12:56:16] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.8491, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 12:56:17] 状态切换：SPLASH -> UNKNOWN | {"from_state": "SPLASH", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": 0.414}
+[2026-02-21 12:56:20] 状态切换：UNKNOWN -> LOGIN | {"from_state": "UNKNOWN", "to_state": "LOGIN", "score": 0.8971, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 12:56:32] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.824, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 12:56:37] 状态切换：CONNECTING -> LOGIN | {"from_state": "CONNECTING", "to_state": "LOGIN", "score": 0.8972, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 12:56:37] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.8249, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 12:56:38] 状态切换：CONNECTING -> UNKNOWN | {"from_state": "CONNECTING", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": 0.5248}
+[2026-02-21 12:57:19] 检测到游戏已关闭，状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 12:57:19] 状态机已结束
+[2026-02-21 13:07:20] 锚点加载完成 | {"count": 9, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 13:07:20] 状态机启动：SPLASH/LOGIN/CONNECTING/LOBBY | {"threshold": 0.8, "login_priority_margin": 0.03, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 13:07:23] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.8592, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 13:07:25] 状态切换：SPLASH -> UNKNOWN | {"from_state": "SPLASH", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": 0.5217}
+[2026-02-21 13:07:29] 状态切换：UNKNOWN -> LOGIN | {"from_state": "UNKNOWN", "to_state": "LOGIN", "score": 0.8971, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 13:07:34] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.8237, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 13:07:42] 状态切换：CONNECTING -> LOGIN | {"from_state": "CONNECTING", "to_state": "LOGIN", "score": 0.8967, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 13:07:43] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.8352, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 13:07:45] 状态切换：CONNECTING -> UNKNOWN | {"from_state": "CONNECTING", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": 0.557}
+[2026-02-21 13:08:13] 检测到游戏已关闭，状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 13:08:13] 状态机已结束
+[2026-02-21 13:11:04] 锚点加载完成 | {"count": 9, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 13:11:04] 状态机启动：SPLASH/LOGIN/CONNECTING/LOBBY | {"threshold": 0.8, "lobby_threshold": 0.75, "login_priority_margin": 0.03, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 13:11:09] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.8556, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 13:11:10] 状态切换：SPLASH -> UNKNOWN | {"from_state": "SPLASH", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": 0.4063}
+[2026-02-21 13:11:14] 状态切换：UNKNOWN -> LOGIN | {"from_state": "UNKNOWN", "to_state": "LOGIN", "score": 0.8967, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 13:11:18] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.8232, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 13:11:19] 状态切换：CONNECTING -> UNKNOWN | {"from_state": "CONNECTING", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": 0.5325}
+[2026-02-21 13:11:20] 状态切换：UNKNOWN -> CONNECTING | {"from_state": "UNKNOWN", "to_state": "CONNECTING", "score": 0.8374, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 13:11:23] 状态切换：CONNECTING -> LOGIN | {"from_state": "CONNECTING", "to_state": "LOGIN", "score": 0.8974, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 13:11:24] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.8261, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 13:11:26] 状态切换：CONNECTING -> UNKNOWN | {"from_state": "CONNECTING", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": 0.5764}
+[2026-02-21 13:12:45] 检测到游戏已关闭，状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 13:12:45] 状态机已结束
+[2026-02-21 13:16:21] 锚点加载完成 | {"count": 9, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 13:16:21] 状态机启动：SPLASH/LOGIN/CONNECTING/LOBBY | {"threshold": 0.8, "lobby_threshold": 0.75, "login_priority_margin": 0.03, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 13:16:27] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.862, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 13:16:30] 状态切换：SPLASH -> UNKNOWN | {"from_state": "SPLASH", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:16:34] 状态切换：UNKNOWN -> LOGIN | {"from_state": "UNKNOWN", "to_state": "LOGIN", "score": 0.8971, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 13:16:44] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.824, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 13:16:50] 状态切换：CONNECTING -> LOGIN | {"from_state": "CONNECTING", "to_state": "LOGIN", "score": 0.8976, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 13:16:50] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.8257, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 13:16:52] 状态切换：CONNECTING -> UNKNOWN | {"from_state": "CONNECTING", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:17:17] 检测到游戏已关闭，状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 13:17:17] 状态机已结束
+[2026-02-21 13:19:43] 锚点加载完成 | {"count": 9, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 13:19:43] 状态机启动：SPLASH/LOGIN/CONNECTING/LOBBY | {"threshold": 0.8, "lobby_threshold": 0.75, "login_priority_margin": 0.03, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 13:19:47] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.8592, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 13:19:50] 状态切换：SPLASH -> UNKNOWN | {"from_state": "SPLASH", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:19:53] 状态切换：UNKNOWN -> LOGIN | {"from_state": "UNKNOWN", "to_state": "LOGIN", "score": 0.8971, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 13:19:59] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.8258, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 13:20:05] 状态切换：CONNECTING -> LOGIN | {"from_state": "CONNECTING", "to_state": "LOGIN", "score": 0.8976, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 13:20:06] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.8337, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 13:20:06] 状态切换：CONNECTING -> UNKNOWN | {"from_state": "CONNECTING", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:20:13] 状态切换：UNKNOWN -> LOBBY | {"from_state": "UNKNOWN", "to_state": "LOBBY", "score": 0.7938, "anchor": "LOBBY_800_600_3.png"}
+[2026-02-21 13:21:24] 状态切换：LOBBY -> UNKNOWN | {"from_state": "LOBBY", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:21:25] 状态切换：UNKNOWN -> LOBBY | {"from_state": "UNKNOWN", "to_state": "LOBBY", "score": 0.7861, "anchor": "LOBBY_800_600_3.png"}
+[2026-02-21 13:21:29] 状态切换：LOBBY -> UNKNOWN | {"from_state": "LOBBY", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:21:30] 状态切换：UNKNOWN -> LOBBY | {"from_state": "UNKNOWN", "to_state": "LOBBY", "score": 0.7918, "anchor": "LOBBY_800_600_3.png"}
+[2026-02-21 13:21:38] 状态切换：LOBBY -> UNKNOWN | {"from_state": "LOBBY", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:21:39] 状态切换：UNKNOWN -> LOBBY | {"from_state": "UNKNOWN", "to_state": "LOBBY", "score": 0.7939, "anchor": "LOBBY_800_600_3.png"}
+[2026-02-21 13:21:53] 状态切换：LOBBY -> UNKNOWN | {"from_state": "LOBBY", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:21:56] 状态切换：UNKNOWN -> LOBBY | {"from_state": "UNKNOWN", "to_state": "LOBBY", "score": 0.7905, "anchor": "LOBBY_800_600_3.png"}
+[2026-02-21 13:21:57] 状态切换：LOBBY -> UNKNOWN | {"from_state": "LOBBY", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:22:01] 状态切换：UNKNOWN -> LOBBY | {"from_state": "UNKNOWN", "to_state": "LOBBY", "score": 0.7905, "anchor": "LOBBY_800_600_3.png"}
+[2026-02-21 13:22:02] 状态切换：LOBBY -> UNKNOWN | {"from_state": "LOBBY", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:22:55] 状态切换：UNKNOWN -> LOBBY | {"from_state": "UNKNOWN", "to_state": "LOBBY", "score": 0.7905, "anchor": "LOBBY_800_600_3.png"}
+[2026-02-21 13:23:03] 状态切换：LOBBY -> UNKNOWN | {"from_state": "LOBBY", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:23:08] 状态切换：UNKNOWN -> LOBBY | {"from_state": "UNKNOWN", "to_state": "LOBBY", "score": 0.7905, "anchor": "LOBBY_800_600_3.png"}
+[2026-02-21 13:23:18] 状态切换：LOBBY -> UNKNOWN | {"from_state": "LOBBY", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:23:18] 检测到游戏已关闭，状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 13:23:18] 状态机已结束
+[2026-02-21 13:31:53] 锚点加载完成 | {"count": 10, "anchor_dir": "G:\\Project\\limbuscompany_Scripts3\\anchorPoint", "target_res": "800_600"}
+[2026-02-21 13:31:53] 状态机启动：SPLASH/LOGIN/CONNECTING/LOBBY/RECHARGE | {"threshold": 0.8, "lobby_threshold": 0.75, "login_priority_margin": 0.03, "stable_frames": 3, "window_title": "LimbusCompany", "proc_name": "LimbusCompany.exe"}
+[2026-02-21 13:31:58] 状态切换：UNKNOWN -> SPLASH | {"from_state": "UNKNOWN", "to_state": "SPLASH", "score": 0.8626, "anchor": "SPLASH_800_600_1.png"}
+[2026-02-21 13:32:01] 状态切换：SPLASH -> UNKNOWN | {"from_state": "SPLASH", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:32:05] 状态切换：UNKNOWN -> LOGIN | {"from_state": "UNKNOWN", "to_state": "LOGIN", "score": 0.8971, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 13:32:14] 状态切换：LOGIN -> UNKNOWN | {"from_state": "LOGIN", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:32:15] 状态切换：UNKNOWN -> LOGIN | {"from_state": "UNKNOWN", "to_state": "LOGIN", "score": 0.8975, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 13:32:18] 状态切换：LOGIN -> UNKNOWN | {"from_state": "LOGIN", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:32:20] 状态切换：UNKNOWN -> LOGIN | {"from_state": "UNKNOWN", "to_state": "LOGIN", "score": 0.8973, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 13:32:23] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.8286, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 13:32:28] 状态切换：CONNECTING -> LOGIN | {"from_state": "CONNECTING", "to_state": "LOGIN", "score": 0.8967, "anchor": "LOGIN_800_600_3.png"}
+[2026-02-21 13:32:29] 状态切换：LOGIN -> CONNECTING | {"from_state": "LOGIN", "to_state": "CONNECTING", "score": 0.8273, "anchor": "CONNECTING_800_600_1.png"}
+[2026-02-21 13:32:30] 状态切换：CONNECTING -> UNKNOWN | {"from_state": "CONNECTING", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:32:37] 状态切换：UNKNOWN -> LOBBY | {"from_state": "UNKNOWN", "to_state": "LOBBY", "score": 0.7938, "anchor": "LOBBY_800_600_3.png"}
+[2026-02-21 13:32:40] 状态切换：LOBBY -> RECHARGE | {"from_state": "LOBBY", "to_state": "RECHARGE", "score": 0.8517, "anchor": "RECHARGE_800_600_1.png"}
+[2026-02-21 13:32:50] 状态切换：RECHARGE -> LOBBY | {"from_state": "RECHARGE", "to_state": "LOBBY", "score": 0.7937, "anchor": "LOBBY_800_600_3.png"}
+[2026-02-21 13:32:52] 状态切换：LOBBY -> RECHARGE | {"from_state": "LOBBY", "to_state": "RECHARGE", "score": 0.8508, "anchor": "RECHARGE_800_600_1.png"}
+[2026-02-21 13:32:55] 状态切换：RECHARGE -> LOBBY | {"from_state": "RECHARGE", "to_state": "LOBBY", "score": 0.7937, "anchor": "LOBBY_800_600_3.png"}
+[2026-02-21 13:32:56] 状态切换：LOBBY -> RECHARGE | {"from_state": "LOBBY", "to_state": "RECHARGE", "score": 0.8518, "anchor": "RECHARGE_800_600_1.png"}
+[2026-02-21 13:32:57] 状态切换：RECHARGE -> LOBBY | {"from_state": "RECHARGE", "to_state": "LOBBY", "score": 0.7938, "anchor": "LOBBY_800_600_3.png"}
+[2026-02-21 13:32:59] 状态切换：LOBBY -> RECHARGE | {"from_state": "LOBBY", "to_state": "RECHARGE", "score": 0.8511, "anchor": "RECHARGE_800_600_1.png"}
+[2026-02-21 13:33:08] 状态切换：RECHARGE -> LOBBY | {"from_state": "RECHARGE", "to_state": "LOBBY", "score": 0.7935, "anchor": "LOBBY_800_600_3.png"}
+[2026-02-21 13:33:19] 状态切换：LOBBY -> UNKNOWN | {"from_state": "LOBBY", "to_state": "UNKNOWN", "reason": "all_scores_below_threshold", "max_score": -1.0}
+[2026-02-21 13:33:19] 检测到游戏已关闭，状态机自动结束 | {"proc_name": "LimbusCompany.exe"}
+[2026-02-21 13:33:19] 状态机已结束

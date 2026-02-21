@@ -1,0 +1,159 @@
+{"ts": "2026-02-21T10:19:39+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T10:19:39+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T10:19:39+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T10:19:43+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=32796，进程名=LimbusCompany.exe", "pid": 32796, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T10:21:12+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=32796", "pid": 32796}
+{"ts": "2026-02-21T10:24:32+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T10:24:32+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T10:24:32+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T10:24:37+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=13232，进程名=LimbusCompany.exe", "pid": 13232, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T10:24:40+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=13232", "pid": 13232}
+{"ts": "2026-02-21T10:24:40+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T10:24:40+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T10:35:30+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T10:35:30+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T10:35:30+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T10:35:34+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=35912，进程名=LimbusCompany.exe", "pid": 35912, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T11:02:06+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=35912", "pid": 35912}
+{"ts": "2026-02-21T11:02:06+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T11:02:06+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T11:02:33+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T11:02:33+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T11:02:34+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T11:02:36+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=41272，进程名=LimbusCompany.exe", "pid": 41272, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T11:04:50+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=41272", "pid": 41272}
+{"ts": "2026-02-21T11:04:50+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T11:04:50+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T11:19:30+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T11:19:30+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T11:19:30+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T11:19:34+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=34392，进程名=LimbusCompany.exe", "pid": 34392, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T11:20:20+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=34392", "pid": 34392}
+{"ts": "2026-02-21T11:20:20+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T11:20:20+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T11:23:41+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T11:23:41+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T11:23:41+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T11:23:45+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=24452，进程名=LimbusCompany.exe", "pid": 24452, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T11:24:05+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=24452", "pid": 24452}
+{"ts": "2026-02-21T11:24:05+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T11:24:05+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T11:24:07+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T11:24:07+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T11:24:07+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T11:24:09+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=41988，进程名=LimbusCompany.exe", "pid": 41988, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T11:26:27+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=41988", "pid": 41988}
+{"ts": "2026-02-21T11:26:27+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T11:26:27+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T11:30:45+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T11:30:45+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T11:30:45+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T11:30:52+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=41044，进程名=LimbusCompany.exe", "pid": 41044, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T11:31:06+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=41044", "pid": 41044}
+{"ts": "2026-02-21T11:31:06+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T11:31:06+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T11:31:27+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T11:31:27+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T11:31:27+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T11:31:29+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=22984，进程名=LimbusCompany.exe", "pid": 22984, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T11:31:40+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=22984", "pid": 22984}
+{"ts": "2026-02-21T11:31:40+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T11:31:40+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T11:33:41+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T11:33:41+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T11:33:41+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T11:33:45+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=34748，进程名=LimbusCompany.exe", "pid": 34748, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T11:34:02+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=34748", "pid": 34748}
+{"ts": "2026-02-21T11:34:02+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T11:34:02+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T11:34:22+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T11:34:22+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T11:34:22+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T11:34:24+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=35700，进程名=LimbusCompany.exe", "pid": 35700, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T11:35:01+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=35700", "pid": 35700}
+{"ts": "2026-02-21T11:35:01+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T11:35:01+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T11:35:12+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T11:35:12+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T11:35:12+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T11:35:14+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=7288，进程名=LimbusCompany.exe", "pid": 7288, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T11:35:19+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=7288", "pid": 7288}
+{"ts": "2026-02-21T11:35:19+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T11:35:19+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T11:35:34+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T11:35:34+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T11:35:34+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T11:35:36+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=32960，进程名=LimbusCompany.exe", "pid": 32960, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T11:35:56+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=32960", "pid": 32960}
+{"ts": "2026-02-21T11:35:56+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T11:35:56+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T12:10:42+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T12:10:42+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T12:10:42+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T12:10:46+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=37604，进程名=LimbusCompany.exe", "pid": 37604, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T12:11:09+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=37604", "pid": 37604}
+{"ts": "2026-02-21T12:11:09+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T12:11:09+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T12:12:07+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T12:12:07+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T12:12:07+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T12:12:11+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=33652，进程名=LimbusCompany.exe", "pid": 33652, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T12:12:54+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=33652", "pid": 33652}
+{"ts": "2026-02-21T12:12:54+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T12:12:54+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T12:29:55+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T12:29:55+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T12:29:55+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T12:29:59+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=38324，进程名=LimbusCompany.exe", "pid": 38324, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T12:30:20+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=38324", "pid": 38324}
+{"ts": "2026-02-21T12:30:20+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T12:30:20+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T12:42:04+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T12:42:04+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T12:42:04+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T12:42:09+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=33624，进程名=LimbusCompany.exe", "pid": 33624, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T12:43:20+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=33624", "pid": 33624}
+{"ts": "2026-02-21T12:43:20+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T12:43:20+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T12:56:08+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T12:56:08+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T12:56:08+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T12:56:12+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=45728，进程名=LimbusCompany.exe", "pid": 45728, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T12:57:20+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=45728", "pid": 45728}
+{"ts": "2026-02-21T12:57:20+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T12:57:20+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T13:07:19+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T13:07:19+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T13:07:19+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T13:07:21+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=43016，进程名=LimbusCompany.exe", "pid": 43016, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T13:08:13+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=43016", "pid": 43016}
+{"ts": "2026-02-21T13:08:13+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T13:08:13+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T13:11:03+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T13:11:03+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T13:11:03+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T13:11:05+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=37912，进程名=LimbusCompany.exe", "pid": 37912, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T13:12:45+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=37912", "pid": 37912}
+{"ts": "2026-02-21T13:12:45+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T13:12:45+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T13:16:19+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T13:16:19+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T13:16:19+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T13:16:25+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=39720，进程名=LimbusCompany.exe", "pid": 39720, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T13:17:18+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=39720", "pid": 39720}
+{"ts": "2026-02-21T13:17:18+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T13:17:18+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T13:19:42+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T13:19:42+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T13:19:42+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T13:19:45+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=48924，进程名=LimbusCompany.exe", "pid": 48924, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T13:23:18+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=48924", "pid": 48924}
+{"ts": "2026-02-21T13:23:18+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T13:23:18+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
+{"ts": "2026-02-21T13:31:52+08:00", "event": "MONITOR_STARTED", "message_cn": "监控已启动，目标进程：LimbusCompany.exe，轮询间隔：1.0秒", "process_names": ["LimbusCompany.exe"], "poll_interval_s": 1.0, "jsonl_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.jsonl", "text_log_file": "G:\\Project\\limbuscompany_Scripts3\\runtime\\logs\\limbus_lifecycle.log"}
+{"ts": "2026-02-21T13:31:52+08:00", "event": "I_STEAM_DETECTED", "message_cn": "检测到 Steam 进程：steam.exe", "steam_process": "steam.exe"}
+{"ts": "2026-02-21T13:31:52+08:00", "event": "I_GAME_LAUNCH_REQUESTED", "message_cn": "已发送游戏启动请求（AppID=1973530）", "app_id": 1973530}
+{"ts": "2026-02-21T13:31:57+08:00", "event": "GAME_STARTED", "message_cn": "检测到游戏启动：PID=51300，进程名=LimbusCompany.exe", "pid": 51300, "process": "LimbusCompany.exe"}
+{"ts": "2026-02-21T13:33:20+08:00", "event": "GAME_CLOSED", "message_cn": "检测到游戏关闭：PID=51300", "pid": 51300}
+{"ts": "2026-02-21T13:33:20+08:00", "event": "MONITOR_AUTO_STOP", "message_cn": "检测到游戏已全部关闭，监控自动结束"}
+{"ts": "2026-02-21T13:33:20+08:00", "event": "MONITOR_STOPPED", "message_cn": "监控已停止"}
