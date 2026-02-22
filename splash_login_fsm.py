@@ -9,6 +9,7 @@ import ctypes
 import ctypes.wintypes
 import json
 import os
+import re
 import time
 from dataclasses import dataclass
 from datetime import datetime
@@ -45,6 +46,15 @@ class DetectResult:
     width: int
     height: int
     anchor_name: str
+
+
+@dataclass
+class FatigueResult:
+    stable_value: Optional[int]
+    stable_confidence: float
+    candidate_value: Optional[int]
+    candidate_confidence: float
+    roi: Tuple[int, int, int, int]
 
 
 class TextJsonLogger:
@@ -158,6 +168,166 @@ def best_detection_by_state(frame_gray: np.ndarray, anchors: List[Anchor]) -> Di
     return best
 
 
+class FatigueReader:
+    """基于 OCR 读取体力左侧当前值。"""
+
+    def __init__(
+        self,
+        sample_dir: Path,
+        target_res: str,
+        min_confidence: float = 0.55,
+        stable_frames: int = 3,
+    ) -> None:
+        self.sample_dir = sample_dir
+        self.target_res = target_res
+        self.min_confidence = float(min_confidence)
+        self.stable_frames = max(1, int(stable_frames))
+        self.ocr_name = "RapidOCR"
+        self.ocr = None
+        self._candidate_value: Optional[int] = None
+        self._candidate_count = 0
+        self._stable_value: Optional[int] = None
+        self._stable_confidence = 0.0
+        try:
+            from rapidocr_onnxruntime import RapidOCR
+
+            self.ocr = RapidOCR()
+        except Exception:
+            self.ocr = None
+
+    @property
+    def template_count(self) -> int:
+        # 沿用历史字段名，避免外部日志/脚本改动。
+        return 1 if self.ocr is not None else 0
+
+    def _roi_ratio(self) -> Tuple[float, float, float, float]:
+        if self.target_res == "1920_1080":
+            # ROI.docx: x=0.427 y=0.894 w=0.135 h=0.051
+            return 0.427, 0.894, 0.135, 0.051
+        # 800x600：仅覆盖左侧当前体力数字，排除 "/" 与右侧上限值。
+        # dx=0.262000 dy=0.931000 rw=0.040000 rh=0.031000
+        return 0.262000, 0.931000, 0.040000, 0.031000
+
+    @staticmethod
+    def _preprocess_variants(src: np.ndarray) -> List[np.ndarray]:
+        up = cv2.resize(src, None, fx=2.5, fy=2.5, interpolation=cv2.INTER_CUBIC)
+        hsv = cv2.cvtColor(up, cv2.COLOR_BGR2HSV)
+        mask = cv2.inRange(hsv, (30, 20, 20), (110, 255, 255))
+        kernel = np.ones((2, 2), np.uint8)
+        mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel)
+        mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, kernel)
+        mask_bgr = cv2.cvtColor(mask, cv2.COLOR_GRAY2BGR)
+        gray = cv2.cvtColor(up, cv2.COLOR_BGR2GRAY)
+        _, bw = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+        bw_bgr = cv2.cvtColor(bw, cv2.COLOR_GRAY2BGR)
+        return [up, mask_bgr, bw_bgr]
+
+    @staticmethod
+    def _parse_left_number(text: str) -> Optional[int]:
+        s = text.replace(" ", "")
+        s = s.replace("O", "0").replace("o", "0")
+        s = re.sub(r"[^0-9/]", "", s)
+        if not s:
+            return None
+        if "/" in s:
+            left = s.split("/", 1)[0]
+            if left.isdigit():
+                return int(left)
+            return None
+        m = re.search(r"\d{1,3}", s)
+        if not m:
+            return None
+        return int(m.group(0))
+
+    def _ocr_once(self, roi_bgr: np.ndarray) -> Tuple[Optional[int], float]:
+        if self.ocr is None:
+            return None, 0.0
+        best_value: Optional[int] = None
+        best_conf = 0.0
+
+        def _run(images: List[np.ndarray]) -> Tuple[Optional[int], float]:
+            local_best_value: Optional[int] = None
+            local_best_conf = 0.0
+            for img in images:
+                try:
+                    result, _elapse = self.ocr(img)
+                except Exception:
+                    continue
+                if not result:
+                    continue
+                parts = sorted(result, key=lambda item: float(item[0][0][0]))
+                text = "".join(str(item[1]) for item in parts)
+                confs = [float(item[2]) for item in parts]
+                value = self._parse_left_number(text)
+                if value is None:
+                    continue
+                conf = float(np.mean(confs)) if confs else 0.0
+                if value < 0 or value > 999:
+                    continue
+                if conf > local_best_conf:
+                    local_best_conf = conf
+                    local_best_value = value
+            return local_best_value, local_best_conf
+
+        variants = self._preprocess_variants(roi_bgr)
+        # 优先左半区，减少把右侧“上限值”串进来。
+        left_variants = [img[:, : max(8, int(img.shape[1] * 0.52))] for img in variants]
+        best_value, best_conf = _run(left_variants)
+        if best_value is None:
+            best_value, best_conf = _run(variants)
+        if best_conf < self.min_confidence:
+            return None, best_conf
+        return best_value, best_conf
+
+    def read(self, frame_bgr: np.ndarray) -> FatigueResult:
+        h, w = frame_bgr.shape[:2]
+        rx, ry, rw, rh = self._roi_ratio()
+        x = int(w * rx)
+        y = int(h * ry)
+        ww = max(8, int(w * rw))
+        hh = max(8, int(h * rh))
+        x = max(0, min(x, w - 1))
+        y = max(0, min(y, h - 1))
+        ww = min(ww, w - x)
+        hh = min(hh, h - y)
+        # 识别使用放宽区域：显示框用于可视化，检测框向上/右扩展避免数字被截断。
+        pad_left = 6
+        pad_right = 2
+        pad_up = 8
+        pad_down = 4
+        dx0 = max(0, x - pad_left)
+        dy0 = max(0, y - pad_up)
+        dx1 = min(w, x + ww + pad_right)
+        dy1 = min(h, y + hh + pad_down)
+        roi_detect = frame_bgr[dy0:dy1, dx0:dx1]
+
+        candidate_value: Optional[int] = None
+        candidate_conf = 0.0
+        if roi_detect.size > 0:
+            candidate_value, candidate_conf = self._ocr_once(roi_detect)
+
+        if candidate_value is not None:
+            if candidate_value == self._candidate_value:
+                self._candidate_count += 1
+            else:
+                self._candidate_value = candidate_value
+                self._candidate_count = 1
+            if self._candidate_count >= self.stable_frames:
+                self._stable_value = candidate_value
+                self._stable_confidence = candidate_conf
+        else:
+            self._candidate_value = None
+            self._candidate_count = 0
+
+        return FatigueResult(
+            stable_value=self._stable_value,
+            stable_confidence=float(self._stable_confidence),
+            candidate_value=candidate_value,
+            candidate_confidence=float(candidate_conf),
+            roi=(x, y, ww, hh),
+        )
+
+
 def is_process_running(process_name: str) -> bool:
     target = process_name.lower()
     import psutil
@@ -200,6 +370,13 @@ def parse_args(argv: Optional[Iterable[str]] = None) -> argparse.Namespace:
     )
     parser.add_argument("--stable-frames", type=int, default=3, help="连续命中帧数，默认 3")
     parser.add_argument("--poll", type=float, default=0.10, help="轮询间隔秒，默认 0.10")
+    parser.add_argument(
+        "--fatigue-sample-dir",
+        default=r"G:\Project\limbuscompany_Scripts3\Fatigue_value\sample",
+        help="体力数字样本目录（按文件名末尾数字作为标签）",
+    )
+    parser.add_argument("--fatigue-min-confidence", type=float, default=0.35, help="体力数字最小置信度，默认 0.35")
+    parser.add_argument("--fatigue-stable-frames", type=int, default=3, help="体力值稳定帧数，默认 3")
     parser.add_argument(
         "--keep-running-after-game-close",
         action="store_true",
@@ -244,6 +421,20 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
     pending_state = STATE_UNKNOWN
     pending_count = 0
     seen_game_running = False
+    fatigue_reader = FatigueReader(
+        sample_dir=Path(args.fatigue_sample_dir),
+        target_res=args.target_res,
+        min_confidence=args.fatigue_min_confidence,
+        stable_frames=args.fatigue_stable_frames,
+    )
+    if fatigue_reader.template_count == 0:
+        logger.log(
+            "E_FATIGUE_OCR_UNAVAILABLE",
+            "异常：体力 OCR 后端不可用，请检查 rapidocr-onnxruntime 安装",
+            backend=fatigue_reader.ocr_name,
+        )
+    last_logged_fatigue: Optional[int] = None
+    last_fatigue_read_log_at = 0.0
 
     logger.log(
         "I_FSM_STARTED",
@@ -252,6 +443,9 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
         lobby_threshold=args.lobby_threshold,
         login_priority_margin=args.login_priority_margin,
         stable_frames=args.stable_frames,
+        fatigue_sample_dir=str(args.fatigue_sample_dir),
+        fatigue_templates=fatigue_reader.template_count,
+        fatigue_ocr_backend=fatigue_reader.ocr_name if fatigue_reader.template_count > 0 else "UNAVAILABLE",
         window_title=args.window_title,
         proc_name=args.proc_name,
     )
@@ -427,6 +621,77 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
                 (255, 255, 255),
                 2,
             )
+
+            should_read_fatigue = current_state in (STATE_LOBBY, STATE_RECHARGE)
+            fatigue = fatigue_reader.read(frame_bgr) if should_read_fatigue else FatigueResult(
+                stable_value=None,
+                stable_confidence=0.0,
+                candidate_value=None,
+                candidate_confidence=0.0,
+                roi=(0, 0, 0, 0),
+            )
+            fx, fy, fw, fh = fatigue.roi
+            if should_read_fatigue and fw > 0 and fh > 0:
+                cv2.rectangle(frame_bgr, (fx, fy), (fx + fw, fy + fh), (0, 0, 255), 1)
+            fatigue_text = "N/A"
+            fatigue_conf = 0.0
+            fatigue_color = (200, 200, 200)
+            if not should_read_fatigue:
+                fatigue_text = "-"
+            if fatigue.stable_value is not None:
+                fatigue_text = str(fatigue.stable_value)
+                fatigue_conf = fatigue.stable_confidence
+                fatigue_color = (80, 255, 120)
+            elif fatigue.candidate_value is not None:
+                fatigue_text = f"{fatigue.candidate_value}?"
+                fatigue_conf = fatigue.candidate_confidence
+                fatigue_color = (0, 210, 255)
+            cv2.putText(
+                frame_bgr,
+                f"FATIGUE={fatigue_text} conf={fatigue_conf:.3f}",
+                (10, 108),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.6,
+                fatigue_color,
+                2,
+            )
+            if fatigue.stable_value is not None and fatigue.stable_value != last_logged_fatigue:
+                last_logged_fatigue = fatigue.stable_value
+                logger.log(
+                    "FATIGUE_UPDATE",
+                    f"体力更新：{fatigue.stable_value}",
+                    state=current_state,
+                    fatigue=fatigue.stable_value,
+                    confidence=round(float(fatigue.stable_confidence), 4),
+                )
+            now_ts = time.time()
+            if should_read_fatigue and (now_ts - last_fatigue_read_log_at) >= 2.0:
+                last_fatigue_read_log_at = now_ts
+                if fatigue.stable_value is not None:
+                    logger.log(
+                        "FATIGUE_READ",
+                        f"体力识别：{fatigue.stable_value}",
+                        state=current_state,
+                        mode="stable",
+                        fatigue=fatigue.stable_value,
+                        confidence=round(float(fatigue.stable_confidence), 4),
+                    )
+                elif fatigue.candidate_value is not None:
+                    logger.log(
+                        "FATIGUE_READ",
+                        f"体力识别候选：{fatigue.candidate_value}",
+                        state=current_state,
+                        mode="candidate",
+                        fatigue=fatigue.candidate_value,
+                        confidence=round(float(fatigue.candidate_confidence), 4),
+                    )
+                else:
+                    logger.log(
+                        "FATIGUE_READ",
+                        "体力识别：N/A",
+                        state=current_state,
+                        mode="none",
+                    )
 
             cv2.putText(
                 frame_bgr,
