@@ -440,10 +440,52 @@ def ratio_roi_to_rect(frame_w: int, frame_h: int, roi_ratio: Tuple[float, float,
 
 def left_click_at_screen(x: int, y: int) -> None:
     user32 = ctypes.windll.user32
-    user32.SetCursorPos(int(x), int(y))
+    # 先平滑移动鼠标，避免看起来像“瞬移”。
+    pt = ctypes.wintypes.POINT()  # type: ignore[attr-defined]
+    if user32.GetCursorPos(ctypes.byref(pt)):
+        sx, sy = int(pt.x), int(pt.y)
+    else:
+        sx, sy = int(x), int(y)
+
+    tx, ty = int(x), int(y)
+    dx = tx - sx
+    dy = ty - sy
+    dist = max(abs(dx), abs(dy))
+    steps = max(8, min(36, dist // 12 if dist > 0 else 8))
+    # 轻微弧线偏移，让轨迹看起来更自然。
+    arc = random.uniform(-6.0, 6.0)
+
+    for i in range(1, steps + 1):
+        t = i / float(steps)
+        # ease-in-out
+        e = 3 * t * t - 2 * t * t * t
+        cx = sx + dx * e
+        cy = sy + dy * e
+        # 在中段增加一点法线方向偏移，形成弧线
+        bend = (1.0 - abs(2.0 * t - 1.0)) * arc
+        if dist > 0:
+            nx = -dy / float(max(1, dist))
+            ny = dx / float(max(1, dist))
+            cx += nx * bend
+            cy += ny * bend
+        user32.SetCursorPos(int(round(cx)), int(round(cy)))
+        time.sleep(0.003 + random.uniform(0.0, 0.003))
+
+    user32.SetCursorPos(tx, ty)
+    time.sleep(0.01 + random.uniform(0.0, 0.015))
     user32.mouse_event(0x0002, 0, 0, 0, 0)  # LEFTDOWN
-    time.sleep(0.01)
+    time.sleep(0.012 + random.uniform(0.0, 0.02))
     user32.mouse_event(0x0004, 0, 0, 0, 0)  # LEFTUP
+
+
+def press_enter_key() -> None:
+    """Send a single Enter key press using Win32 keyboard events."""
+    user32 = ctypes.windll.user32
+    vk_return = 0x0D
+    keyeventf_keyup = 0x0002
+    user32.keybd_event(vk_return, 0, 0, 0)
+    time.sleep(0.03)
+    user32.keybd_event(vk_return, 0, keyeventf_keyup, 0)
 
 
 def parse_args(argv: Optional[Iterable[str]] = None) -> argparse.Namespace:
@@ -486,7 +528,7 @@ def parse_args(argv: Optional[Iterable[str]] = None) -> argparse.Namespace:
     )
     parser.add_argument(
         "--recharge-click1-roi",
-        default="0.512,0.660,0.154,0.036",
+        default="0.512,0.708333,0.154,0.045",
         help="RECHARGE_1（黄色）可点击区域归一化 ROI: x,y,w,h（基于 800x600）",
     )
     parser.add_argument(
@@ -644,7 +686,7 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
             "RECHARGE_1 点击区域参数非法，回退默认值",
             recharge_click1_roi=str(args.recharge_click1_roi),
         )
-        recharge_click1_roi = (0.512, 0.660, 0.154, 0.036)
+        recharge_click1_roi = (0.512, 0.708333, 0.154, 0.045)
     try:
         recharge2_roi_vals = [float(x.strip()) for x in str(args.recharge_click2_roi).split(",")]
         if len(recharge2_roi_vals) != 4:
@@ -909,28 +951,26 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
                         sc2y = top + int(c2y * (height / 600.0))
                         left_click_at_screen(sc2x, sc2y)
                         recharge_click_phase = 1
-                        recharge_click_next_at = now_ts + 2.0
+                        recharge_click_next_at = now_ts + 2.3
                         logger.log(
                             "RECHARGE_AUTO_CLICK_2",
                             "RECHARGE 点击 RECHARGE_2 中心",
                             click_time=datetime.now().astimezone().isoformat(timespec="milliseconds"),
                             frame_800x600={"x": c2x, "y": c2y},
                             window_pixels={"x": sc2x, "y": sc2y},
-                            next_at_in_sec=2.0,
+                            next_at_in_sec=2.3,
                         )
                     elif recharge_auto_session_active and recharge_click_phase == 1 and now_ts >= recharge_click_next_at:
                         c1x = r1x + (r1w // 2)
                         c1y = r1y + (r1h // 2)
-                        sc1x = left + int(c1x * (width / 800.0))
-                        sc1y = top + int(c1y * (height / 600.0))
-                        left_click_at_screen(sc1x, sc1y)
+                        press_enter_key()
                         recharge_click_phase = 2
                         logger.log(
                             "RECHARGE_AUTO_CLICK_1",
-                            "RECHARGE 点击 RECHARGE_1 中心",
+                            "RECHARGE 第二阶段改为按下 Enter",
                             click_time=datetime.now().astimezone().isoformat(timespec="milliseconds"),
                             frame_800x600={"x": c1x, "y": c1y},
-                            window_pixels={"x": sc1x, "y": sc1y},
+                            action="press_enter",
                         )
                         recharge_close_check_pending = True
                         recharge_close_check_at = now_ts + 5.0
@@ -1079,7 +1119,7 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
                             current_state=current_state,
                         )
 
-                should_read_fatigue = current_state in (STATE_LOBBY, STATE_RECHARGE)
+                should_read_fatigue = current_state == STATE_LOBBY
                 if should_read_fatigue:
                     if (now_ts - last_fatigue_infer_at) >= max(0.05, float(args.fatigue_interval)):
                         fatigue_worker.submit(frame_bgr)
